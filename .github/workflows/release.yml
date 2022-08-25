@@ -80,10 +80,3 @@ jobs:
         run: |
           rm ./dist/fluidd.zip
           cp ./server/config.json ./dist/config.json
-
-      - name: Deploy to Host
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: |
-          npm run deploy:host
