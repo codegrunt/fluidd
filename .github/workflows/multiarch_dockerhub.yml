@@ -50,4 +50,4 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           build-args: |
-            FRONTEND_ZIP_URL=https://github.com/codegrunt/fluidd/releases/download/v1.19.2-beta/fluidd.zip
+            FRONTEND_ZIP_URL=https://github.com/codegrunt/fluidd/archive/refs/tags/v1.19.2-beta.zip
